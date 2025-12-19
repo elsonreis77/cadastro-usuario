@@ -39,5 +39,7 @@ public class UsuarioService {
                         usuarioEntity.getNome())
                 .id(usuarioEntity.getId())
                 .build();
+
+        repository.saveAndFlush(usuarioAtualizado);
     }
 }
